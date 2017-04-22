@@ -1,29 +1,11 @@
-/*import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
-}
-
-export default App;
- */
-
 import React, {Component} from 'react';
 import Header from './Header/Header';
 import Dropdown from './Dropdown/Dropdown';
+import Form from './Form/Form';
+import FormRef from './Form-ref/Form-ref';
+import CounterByReduxClass from './CounterByReduxClass/CounterByReduxClass';
+import CounterByReduxFunction from './CounterByReduxFunction/CounterByReduxFunction';
+import CounterByRedux from './CounterByRedux/CounterByRedux';
 
 const menu = [
   {
@@ -46,6 +28,11 @@ class App extends Component {
       <div>
         <Header items={menu} />
         <Dropdown />
+        <Form />
+        <FormRef />
+        <CounterByReduxClass />
+        <CounterByReduxFunction />
+        <CounterByRedux />
       </div>
     );
   }

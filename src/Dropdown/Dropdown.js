@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import './Dropdown.css';
 
 class Dropdown extends Component {
     constructor(props) {
@@ -18,9 +17,11 @@ class Dropdown extends Component {
             dropdownText = <div>Here is what is shown in dropdown</div>
         }
         return (
-            <div onClick={this.toggleState.bind(this)}>
-                It is dropdown
-                {dropdownText}
+            <div className='mini-container'>
+                <div onClick={this.toggleState.bind(this)}>
+                    It is dropdown. Click me
+                    {dropdownText}
+                </div>
             </div>
         );
     }
